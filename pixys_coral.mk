@@ -89,3 +89,5 @@ PRODUCT_SYSTEM_DEVICE := coral
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=coral \
     TARGET_PRODUCT=coral
+
+$(call inherit-product, vendor/google/coral/coral-vendor.mk)

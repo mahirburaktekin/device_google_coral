@@ -92,3 +92,5 @@ PRODUCT_SYSTEM_DEVICE := flame
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=flame \
     TARGET_PRODUCT=flame 
+
+$(call inherit-product, vendor/google/flame/flame-vendor.mk)
