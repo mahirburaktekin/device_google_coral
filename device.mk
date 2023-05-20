@@ -205,6 +205,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     checkpoint_gc
 
+# Lineage Health
+include hardware/google/pixel/lineage_health/device.mk
+
 # The following modules are included in debuggable builds only.
 PRODUCT_PACKAGES_DEBUG += \
     bootctl \
