@@ -22,6 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 include device/google/coral/device.mk
 
+# gs-common
+include device/google/gs-common/misc_writer/misc_writer.mk
+
 # Set Vendor SPL to match platform
 VENDOR_SECURITY_PATCH = 2022-10-05
 
