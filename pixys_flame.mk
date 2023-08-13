@@ -41,12 +41,28 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_product.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 
-$(call inherit-product, device/google/coral/device-coral.mk)
+# Inherit some common PixysOS stuff.
+$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
+
+# PixysOS Properties
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+
+$(call inherit-product, device/google/coral/device-flame.mk)
 $(call inherit-product-if-exists, vendor/google_devices/coral/proprietary/device-vendor.mk)
-$(call inherit-product-if-exists, vendor/google_devices/coral/prebuilts/device-vendor-coral.mk)
+$(call inherit-product-if-exists, vendor/google_devices/coral/prebuilts/device-vendor-flame.mk)
+
+# Exclude features that are not available on AOSP devices.
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/aosp_excluded_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/aosp_excluded_hardware.xml
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
+    $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
 
 # Don't build super.img.
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -64,7 +80,15 @@ ifneq (REL,$(PLATFORM_VERSION_CODENAME))
 endif
 
 PRODUCT_MANUFACTURER := Google
-PRODUCT_BRAND := Android
-PRODUCT_NAME := aosp_coral
-PRODUCT_DEVICE := coral
-PRODUCT_MODEL := AOSP on coral
+PRODUCT_BRAND := google
+PRODUCT_NAME := aosp_flame
+PRODUCT_DEVICE := flame
+PRODUCT_MODEL := Pixel 4
+
+PRODUCT_SYSTEM_NAME := flame
+PRODUCT_SYSTEM_DEVICE := flame
+
+# Override device name
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_DEVICE=flame \
+    TARGET_PRODUCT=flame 
