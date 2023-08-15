@@ -8,6 +8,10 @@ product/etc/firmware/music_detector.descriptor
 product/etc/firmware/music_detector.sound_model
 product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk;PRESIGNED
 
+# Adaptive connectivity
+product/priv-app/SCONE/SCONE.apk
+product/priv-app/GCS/GCS.apk
+
 # Camera extensions
 product/app/PixelCameraServicesCoral/PixelCameraServicesCoral.apk;PRESIGNED
 

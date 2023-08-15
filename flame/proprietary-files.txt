@@ -2,6 +2,10 @@
 
 # product partition
 
+# Adaptive connectivity
+product/priv-app/SCONE/SCONE.apk
+product/priv-app/GCS/GCS.apk
+
 # Audio
 product/etc/ambient/matcher_tah.leveldb
 product/etc/firmware/music_detector.descriptor
