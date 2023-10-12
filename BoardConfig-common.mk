@@ -252,6 +252,10 @@ TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
 # Reserve space for gapps install
 -include vendor/pixys/config/BoardConfigReservedSize.mk
 
+# Disable sparse for ext/f2fs images
+TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
+TARGET_USERIMAGES_SPARSE_F2FS_DISABLED := true
+
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
 
