@@ -898,13 +898,6 @@ VENDOR_SKIP_FILES=(
     "lib64/hardware.google.bluetooth.sar@1.0.so"
     "lib64/vendor.qti.hardware.bluetooth_audio@2.0.so"
 
-    # Battery
-    "bin/hw/vendor.google.google_battery@1.2-service-vendor"
-    "etc/init/vendor.google.google_battery@1.2-service.rc"
-    "lib64/vendor.google.google_battery@1.0.so"
-    "lib64/vendor.google.google_battery@1.1.so"
-    "lib64/vendor.google.google_battery@1.2.so"
-
     # Camera
     "lib/android.frameworks.cameraservice.common@2.0.so"
     "lib/android.frameworks.cameraservice.device@2.0.so"
