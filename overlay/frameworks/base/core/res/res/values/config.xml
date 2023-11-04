@@ -608,7 +608,13 @@
         <item>device_personalization_services/AdaptiveAudio__show_promo_notification=false</item>
         <item>device_personalization_services/AdaptiveAudio__use_silence_detector_state_bug_fix=true</item>
 
-      <!-- Now playing -->
+       <!-- Ambient context -->
+        <item>device_personalization_services/AmbientContext__enable=true</item>
+        <item>device_personalization_services/AmbientContext__s_lower_threshold=0.35</item>
+        <item>device_personalization_services/AmbientContext__s_upper_threshold=0.4</item>
+        <item>device_personalization_services/AmbientContext__sound_model_id=2022061001</item>
+
+       <!-- Now playing -->
         <item>device_personalization_services/NowPlaying__ambient_music_apk_music_detector_min_score=0.45</item>
         <item>device_personalization_services/NowPlaying__ambient_music_index_manifest_17_09_02=3060:https://storage.googleapis.com/music-iq-db/updatable_db_v3/20230723-030026/manifest.json</item>
         <item>device_personalization_services/NowPlaying__ambient_music_matcher_match_threshold_17_09_02=1.0E-6</item>
