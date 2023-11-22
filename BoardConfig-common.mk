@@ -242,6 +242,9 @@ DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE := device/google/coral/device_framework
 # Needed for camera
 TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
 
+# Reserve space for gapps install
+-include vendor/pixys/config/BoardConfigReservedSize.mk
+
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
 
