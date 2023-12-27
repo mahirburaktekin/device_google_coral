@@ -1657,3 +1657,9 @@ vendor/lib64/nos_app_avb.so
 vendor/lib64/nos_app_identity.so
 vendor/lib64/nos_app_keymaster.so
 vendor/lib64/nos_app_weaver.so
+
+# Audio (Spatial) - from tangorpro-user-14-UQ1A.231205.015
+vendor/lib/soundfx/libspatialaudio.so
+vendor/lib/aoc_audio_stereo_spatializer.so
+vendor/lib64/soundfx/libspatialaudio.so
+vendor/lib64/aoc_audio_stereo_spatializer.so
