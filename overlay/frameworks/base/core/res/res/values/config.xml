@@ -648,6 +648,11 @@
         <item>com.google.oslo/com.google.oslo.OsloOverlay</item>
         <item>com.google.oslo/com.google.oslo.OsloSensorManager</item>
         <item>com.google.oslo/com.google.oslo.service.OsloService</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryContentProvider</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryActivity</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSettingsActivity</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicNotificationsSettingsActivity</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSetupWizardActivity</item>
     </string-array>
 
 </resources>

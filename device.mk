@@ -660,7 +660,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # rro_overlays
 PRODUCT_PACKAGES += \
-    NowPlayingOverlay \
     SettingsFloralOverlay
 
 # Disable OMX
