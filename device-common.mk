@@ -78,10 +78,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     device/google/coral/init.logging.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(PRODUCT_PLATFORM).logging.rc
 
-# Adaptive charging
-PRODUCT_COPY_FILES += \
-    device/google/coral/adaptivecharging.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/adaptivecharging.xml
-
 # task profiles
 PRODUCT_COPY_FILES += \
     device/google/coral/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
