@@ -9,6 +9,7 @@ BOARD_SEPOLICY_DIRS += device/google/coral/sepolicy/vendor/knowles/common
 BOARD_SEPOLICY_DIRS += device/google/coral/sepolicy/tracking_denials
 BOARD_SEPOLICY_DIRS += device/google/coral/sepolicy/vendor/st
 BOARD_SEPOLICY_DIRS += device/google/coral/sepolicy/vendor/verizon
+BOARD_SEPOLICY_DIRS += device/google/coral/sepolicy/vendor/thermal
 
 # Pixel-wide
 BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/googlebattery
