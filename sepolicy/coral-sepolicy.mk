@@ -15,6 +15,7 @@ BOARD_SEPOLICY_DIRS += device/google/coral/sepolicy/vendor/thermal
 BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/googlebattery
 BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/confirmationui_hal
 BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/powerstats
+BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/input
 
 # system_ext
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += device/google/coral/sepolicy/system_ext/public
