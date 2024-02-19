@@ -33,4 +33,8 @@
 
     <!-- Wireless charger -->
     <bool name="config_nfc_conflict_with_wlc">true</bool>
+
+    <!-- Dreamliner -->
+    <string name="config_dockComponent">com.google.android.systemui.dreamliner.WirelessChargerImpl</string>
+
 </resources>
