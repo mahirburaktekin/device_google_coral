@@ -161,6 +161,10 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/commonsys-intf/display \
     vendor/qcom/opensource/display
 
+# Viper
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
+
 # A/B support
 PRODUCT_PACKAGES += \
     otapreopt_script \
